@@ -32,7 +32,6 @@ for (let i = 0; i < intentos; i++) {
   } else {
     console.log(nombre + ", no podes ingresar a la página.");
     alert(nombre + ", no podes ingresar a la página.");
-    ingresoExitoso = true;
     break;
   }
 }
@@ -45,5 +44,4 @@ if (!ingresoExitoso && intentosFallidos === intentos) {
 
 if (ingresoExitoso) {
   /*Código para redireccionar a la página permitida*/
-  window.location.href = "www.google.com";
-}
+  window.location.href = "www.google.com";}
