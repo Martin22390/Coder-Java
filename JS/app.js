@@ -1,6 +1,5 @@
 console.log("esta conectado")
 
-
 let intentos = 3;
 let ingresoExitoso = false;
 
@@ -8,22 +7,26 @@ for (let i = 0; i < intentos; i++) {
   let nombre = prompt("Ingresa tu nombre: ");
 
   if (!nombre) {
-    alert("No respondiste lo pedido. No podes ingresar a la página.");
+    console.log("No respondiste lo pedido. No puedes ingresar a la página.");
+    alert("No respondiste lo pedido. No puedes ingresar a la página.");
     continue;
   }
 
   let edad = parseInt(prompt("Ingresa tu edad: "));
 
   if (isNaN(edad) || edad <= 0) {
-    alert("No respondiste lo pedido. No podes ingresar a la página.");
+    console.log("No respondiste lo pedido. No puedes ingresar a la página.");
+    alert("No respondiste lo pedido. No puedes ingresar a la página.");
     continue;
   }
 
   if (edad >= 18) {
+    console.log("Bienvenido/a, " + nombre + "! Puedes entrar a la página.");
     alert("Bienvenido/a, " + nombre + "! Puedes entrar a la página.");
     ingresoExitoso = true;
     break;
   } else {
+    console.log(nombre + ", no puedes ingresar a la página.");
     alert(nombre + ", no puedes ingresar a la página.");
     ingresoExitoso = true;
     break;
@@ -31,6 +34,7 @@ for (let i = 0; i < intentos; i++) {
 }
 
 if (!ingresoExitoso) {
+  console.log("Llegaste al máximo de intentos. No puedes ingresar a la página.");
   alert("Llegaste al máximo de intentos. No puedes ingresar a la página.");
 }
 
