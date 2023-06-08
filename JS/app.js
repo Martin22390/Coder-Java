@@ -44,4 +44,5 @@ if (!ingresoExitoso && intentosFallidos === intentos) {
 
 if (ingresoExitoso) {
   /*Código para redireccionar a la página permitida*/
-  window.location.href = "www.google.com";}
+  window.location.href = "https://www.google.com";}
+
